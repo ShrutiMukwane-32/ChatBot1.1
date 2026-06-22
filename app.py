@@ -306,7 +306,7 @@ CHANNELS (2): Activation without momentum, Compliance without commitment
 HOW TO START A CONVERSATION WITH TERRAGNI
 ================================================================================
 
-- Email: engage@terragni.com
+- Email: engage@terragni.co
 - Phone: +918956982522
 - Response within 1‑2 working days
 - First conversations are exploratory. “You do not need the problem fully defined.”
