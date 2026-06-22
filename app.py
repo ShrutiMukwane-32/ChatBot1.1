@@ -1,13 +1,32 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, send_from_directory
 from flask_cors import CORS
 import requests
 import os
 
-app = Flask(__name__)
+app = Flask(__name__, static_folder='.')
 CORS(app)
 
+
+# Homepage
+@app.route("/")
+def index():
+    return send_from_directory(".", "index.html")
+
+
+# Serve CSS files
+@app.route("/css/<path:path>")
+def serve_css(path):
+    return send_from_directory("css", path)
+
+
+# Serve JavaScript files
+@app.route("/js/<path:path>")
+def serve_js(path):
+    return send_from_directory("js", path)
+
+
 GROQ_API_KEY = os.environ.get("GROQ_API_KEY")
-MODEL        = "llama-3.3-70b-versatile"
+MODEL = "llama-3.3-70b-versatile"
 
 # ================================================================
 # KNOWLEDGE BASE – FRICTION‑FIRST (EAS IS JUST THE TOOL)
