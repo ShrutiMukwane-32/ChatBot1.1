@@ -24,6 +24,10 @@ def serve_css(path):
 def serve_js(path):
     return send_from_directory("js", path)
 
+@app.route('/<path:filename>')
+def serve_files(filename):
+    return send_from_directory('.', filename)
+
 
 GROQ_API_KEY = os.environ.get("GROQ_API_KEY")
 MODEL = "llama-3.3-70b-versatile"
