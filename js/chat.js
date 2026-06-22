@@ -3,8 +3,7 @@
    Dynamic follow-up suggestions after each answer
    ===================================================== */
 
-const API_URL = "http://127.0.0.1:5000/chat";
-
+const API_URL = "/chat";
 let conversationHistory = [];
 let isLoading = false;
 
@@ -407,7 +406,7 @@ inputEl.addEventListener("keydown", function (e) {
 // Health check
 async function checkBackendHealth() {
   try {
-    const response = await fetch("http://127.0.0.1:5000/health");
+    const response = await fetch("/health");
     if (response.ok) {
       updateStatus(true);
       return true;
