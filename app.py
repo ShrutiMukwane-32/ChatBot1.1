@@ -47,7 +47,7 @@ COMPANY INFORMATION
 - Years completed: 17 years (as of 2026)
 - Name: Terra (Earth) + Agni (Fire) = "Ideas rooted in reality. Change that moves people."
 - Tagline: "The Human Engagement Company"
-- Phone: +91 895 698 2522 | Email: engage@terragni.com
+- Phone: +91 895 698 2522 | Email: engage@terragni.co
 - Website: www.terragni.in
 
 ADDITIONAL BUSINESS INFORMATION:
